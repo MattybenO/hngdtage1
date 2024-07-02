@@ -1,58 +1,70 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-
-section {
-    padding: 60px;
-    height: 100vh;
-    width: 100%;
+main{
+    padding: 50px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-}
-.container .text{
-    font-size: 3.5rem;
-    width: 60%;
-}
-.text h1{
-    text-transform: capitalize;
-    margin-bottom: 3rem;
-}
-
-.text p{
-    margin-bottom: 3rem;
-}
-
-
-.links{
-    font-size: 4rem;
-    padding: 3rem;
-}
-
-.links ul {
-    list-style: none;
+h1{
     margin-bottom: 10px;
 }
 
-.links li a{
-text-decoration: none;
+main > p {
+    margin-bottom: 15px;
 }
 
+.jumbotron{
+width: 100%;
+display: flex;
+/* justify-content: space-between; */
+flex-direction: row;
+gap: 20px;
+align-items: center;
+}
 
+.picture > img{
+    border-radius: 15px;
+}
 
+.plans ul > ol{
+    margin-bottom: 10px;
+}
 
-@media (min-with: 550px) {
-    section{
-        height: 100%;
-        width: 100%;
+.text-center{
+    text-align: center !important;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+}
+.slackInfo{
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.slackInfo  a{
+    text-decoration: none;
+}
+
+@media(width < 426px) {
+    .jumbotron{
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
     }
 
-    .container{
-        display: grid;
+    .links{
+        gap: 20px;
     }
 }
-    
