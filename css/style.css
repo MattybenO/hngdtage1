@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+section {
+    padding: 60px;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.container .text{
+    font-size: 3.5rem;
+    width: 60%;
+}
+.text h1{
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.text p{
+    margin-bottom: 3rem;
+}
+
+
+.links{
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+.links ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.links li a{
+text-decoration: none;
+}
+
+
+
+
+@media (min-with: 550px) {
+    section{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        display: grid;
+    }
+}
+    
