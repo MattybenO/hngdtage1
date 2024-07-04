@@ -11,13 +11,13 @@
 </head>
 <body>
     <main>
-        <h1 class="text-center " data-testid="SlaskDisplayName">Matty</h1>
+        <h1 class="text-center " data-testid="SlackDisplayName">Matty</h1>
         <p class="text-center">My Tech Goals For The Next Two Years
         </p>
 <div class="links">
     <a href="https://hng.tech/learn" data-testid="hngLink"> HNG</a>
-    <a href="https://keyword.dog" data-testid="keyword.dog"> Keyword</a>
-    <a href="https://scrapeanyweb.site" data-testid="scrapeanyweb.site"> scrapeanywebsite</a>
+    <a href="https://keyword.dog" data-testid="keywordLink"> Keyword</a>
+    <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"> scrapeanywebsite</a>
 </div>
         <div class="jumbotron">
         <section class="picture">
@@ -26,8 +26,8 @@
                 <p>
 <i class="fab fa-slack"></i> <a href="mailto:panusegun@gmail.com" data-testid="slackEmail">Slack Email</a>
                 </p>
-                <p id="date"></p>
-                <p id="time"></p>
+                <p data-testid="currentDay" id="date"></p>
+                <p data-testid="currentTimeUTC" id="time"></p>
             </div>
         </section>
         <section class="plans">
